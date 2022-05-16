@@ -1,12 +1,8 @@
 import AnimatedTitleGrow from '../components/AnimatedTitleGrow';
-import CardLink from '../components/CardLink';
 import CardLinkGrid from '../components/CardLinkGrid';
-import TerminalIcon from '@mui/icons-material/Terminal';
-import ContactMailIcon from '@mui/icons-material/ContactMail';
-import PersonIcon from '@mui/icons-material/Person';
-import me from '../public/images/me.jpeg';
-import Link from 'next/link';
-import OnPageNav from '../components/OnPageNav';
+import AboutLink from '../components/AboutLink';
+import ContactLink from '../components/ContactLink';
+import WorkLink from '../components/WorkLink';
 
 function HomePage() {
   return (
@@ -17,7 +13,11 @@ function HomePage() {
       >
         Grant Sisson
       </AnimatedTitleGrow>
-      <OnPageNav />
+      <CardLinkGrid BoxProps={{ my: [2, 4] }}>
+        <AboutLink showImage />
+        <WorkLink />
+        <ContactLink />
+      </CardLinkGrid>
     </>
   );
 }

@@ -1,6 +1,9 @@
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import OnPageNav from '../components/OnPageNav';
+import CardLinkGrid from '../components/CardLinkGrid';
+import HomeLink from '../components/HomeLink';
+import ContactLink from '../components/ContactLink';
+import WorkLink from '../components/WorkLink';
 
 export default function About() {
   return (
@@ -8,19 +11,19 @@ export default function About() {
       <Typography variant='h1' sx={{ my: [2, 4] }}>
         About
       </Typography>
-      <Typography sx={{ my: [1, 2] }}>
+      <Typography sx={{ mb: [1, 2] }}>
         Welcome to my site. It's a little sparse at the moment. In the long
         term, I'd like for it to serve as a portfolio of sorts, and maybe one
         day a place to post some writing as well.
       </Typography>
-      <Typography sx={{ my: [1, 2] }}>
+      <Typography sx={{ mb: [1, 2] }}>
         I started programming in college, and since graduating I've worked as a
         software engineer in the ecommerce, saas, and consulting industries. I
         enjoy building fast, useful web applications, and the majority of my
         experience is in exactly that. I also like to talk about (and generally
         enjoy) rock climbing, books, movies, and driking way too much coffee.
       </Typography>
-      <Typography sx={{ my: [1, 2] }}>
+      <Typography sx={{ mb: [1, 2] }}>
         I built this site with{' '}
         <Link color='inherit' href='https://www.typescriptlang.org/'>
           TypeScript
@@ -41,19 +44,21 @@ export default function About() {
           Material-UI
         </Link>{' '}
         - just a few of my favorite tools. Honestly, they're probably a bit
-        overpowered for what the site is now, but they're also super fun to use.
-        Find the source code and that of any of my other projects on my projects
+        overpowered for what the site is now, but they're also fun to use. Find
+        the source code and that of any of my other projects on my projects
         page, or reach out if you'd like to get in touch.
       </Typography>
-      <OnPageNav current='about' isDense />
+      <CardLinkGrid BoxProps={{ my: [2, 4] }}>
+        <WorkLink />
+        <ContactLink />
+        <HomeLink />
+      </CardLinkGrid>
     </>
   );
 }
 
 export function getStaticProps() {
   return {
-    props: {
-      pageTitle: 'About',
-    },
+    props: { pageTitle: 'About' },
   };
 }

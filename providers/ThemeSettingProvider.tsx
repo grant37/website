@@ -5,6 +5,7 @@ import {
   createContext,
   useMemo,
   useState,
+  useEffect,
 } from 'react';
 import useDetectTheme from '../hooks/useDetectTheme';
 import { dark, light } from '../theme';
@@ -26,6 +27,11 @@ const ThemeSettingsProvider: React.FC<{ children: React.ReactNode }> = ({
   const [themeSettings, setThemeSettings] = useState<ThemeSetting>({
     isDark: isBrowserInDarkMode,
   });
+
+  // TODO: maybe remember setting/don't overwrite if changed
+  useEffect(() => {
+    setThemeSettings({ isDark: isBrowserInDarkMode });
+  }, [isBrowserInDarkMode]);
 
   const contextValue: [ThemeSetting, Dispatch<SetStateAction<ThemeSetting>>] =
     useMemo(() => [themeSettings, setThemeSettings], [themeSettings]);
