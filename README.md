@@ -1,3 +1,2 @@
-# grantsisson.com
-A really very interesting, detail-rich site.
-
+# grant.sisson.dev
+Check it out [here](https://grant.sisson.dev).
