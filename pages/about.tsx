@@ -11,7 +11,10 @@ export default function About() {
     <>
       <Head>
         <title>About</title>
-        <meta name='description'>A little more about me and the site.</meta>
+        <meta
+          name='description'
+          content='A little more about me and the site.'
+        />
       </Head>
       <Typography variant='h1' sx={{ my: [2, 4] }}>
         About

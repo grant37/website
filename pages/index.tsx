@@ -10,7 +10,7 @@ function HomePage() {
     <>
       <Head>
         <title>Grant Sisson</title>
-        <meta name='description'>My personal website.</meta>
+        <meta name='description' content='My personal website.' />
       </Head>
       <AnimatedTitleGrow
         BoxProps={{ my: [2, 4] }}

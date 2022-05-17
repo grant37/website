@@ -15,7 +15,7 @@ export default function Contact() {
     <>
       <Head>
         <title>Contact</title>
-        <meta name='description'>Contact info.</meta>
+        <meta name='description' content='Contact info.' />
       </Head>
       <Typography variant='h1' sx={{ my: [2, 4] }}>
         Contact

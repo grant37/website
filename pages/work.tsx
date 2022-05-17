@@ -22,7 +22,10 @@ export default function Work({
     <>
       <Head>
         <title>Work</title>
-        <meta name='description'>Some of my projects and contributions.</meta>
+        <meta
+          name='description'
+          content='Some of my projects and contributions.'
+        />
       </Head>
       <Typography variant='h1' sx={{ my: [2, 4] }}>
         Recent Work
