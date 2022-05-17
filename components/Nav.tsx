@@ -16,7 +16,7 @@ const Nav: React.FC<{
 }> = ({ onMenuClick, pageTitle, isInDarkMode = false, onToggleDarkMode }) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position='static'>
+      <AppBar position='static' color='default'>
         <Toolbar>
           <IconButton
             size='large'
