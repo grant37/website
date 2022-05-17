@@ -3,10 +3,15 @@ import CardLinkGrid from '../components/CardLinkGrid';
 import AboutLink from '../components/AboutLink';
 import ContactLink from '../components/ContactLink';
 import WorkLink from '../components/WorkLink';
+import Head from 'next/head';
 
 function HomePage() {
   return (
     <>
+      <Head>
+        <title>Grant Sisson</title>
+        <meta name='description'>My personal website.</meta>
+      </Head>
       <AnimatedTitleGrow
         BoxProps={{ my: [2, 4] }}
         TypographyProps={{ variant: 'h1' }}

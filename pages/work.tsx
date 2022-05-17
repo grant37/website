@@ -11,6 +11,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import fetchRepositories, { RepositoryData } from '../api/fetchRepositories';
 import BuildIcon from '@mui/icons-material/Build';
 import ForkLeftIcon from '@mui/icons-material/ForkLeft';
+import Head from 'next/head';
 
 export default function Work({
   myGithubRepos,
@@ -19,6 +20,10 @@ export default function Work({
 }) {
   return (
     <>
+      <Head>
+        <title>Work</title>
+        <meta name='description'>Some of my projects and contributions.</meta>
+      </Head>
       <Typography variant='h1' sx={{ my: [2, 4] }}>
         Recent Work
       </Typography>

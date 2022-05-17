@@ -4,10 +4,15 @@ import CardLinkGrid from '../components/CardLinkGrid';
 import HomeLink from '../components/HomeLink';
 import ContactLink from '../components/ContactLink';
 import WorkLink from '../components/WorkLink';
+import Head from 'next/head';
 
 export default function About() {
   return (
     <>
+      <Head>
+        <title>About</title>
+        <meta name='description'>A little more about me and the site.</meta>
+      </Head>
       <Typography variant='h1' sx={{ my: [2, 4] }}>
         About
       </Typography>
