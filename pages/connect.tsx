@@ -10,15 +10,15 @@ import EmailIcon from '@mui/icons-material/Email';
 import Stack from '@mui/material/Stack';
 import Head from 'next/head';
 
-export default function Contact() {
+export default function Connect() {
   return (
     <>
       <Head>
-        <title>Contact</title>
+        <title>Connect</title>
         <meta name='description' content='Contact info.' />
       </Head>
-      <Typography variant='h1' sx={{ my: [2, 4] }}>
-        Contact
+      <Typography variant='h2' sx={{ my: [2, 4] }}>
+        Connect
       </Typography>
       <Stack direction='row' spacing={2} justifyContent='space-around'>
         <SocialLink
@@ -53,6 +53,6 @@ export default function Contact() {
 
 export function getStaticProps() {
   return {
-    props: { pageTitle: 'Contact' },
+    props: { pageTitle: 'Connect' },
   };
 }

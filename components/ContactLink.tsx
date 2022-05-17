@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const OnPageNav: React.FC<{}> = () => {
   return (
-    <Link href='/contact'>
+    <Link href='/connect'>
       <a>
         <CardLink
-          title='Contact'
+          title='Connect'
           summary="If you'd like to get in touch."
           IconComponent={ContactMailIcon}
         />

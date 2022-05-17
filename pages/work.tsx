@@ -27,7 +27,7 @@ export default function Work({
           content='Some of my projects and contributions.'
         />
       </Head>
-      <Typography variant='h1' sx={{ my: [2, 4] }}>
+      <Typography variant='h2' sx={{ my: [2, 4] }}>
         Recent Work
       </Typography>
       <List>

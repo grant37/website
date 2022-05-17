@@ -16,7 +16,7 @@ export default function About() {
           content='A little more about me and the site.'
         />
       </Head>
-      <Typography variant='h1' sx={{ my: [2, 4] }}>
+      <Typography variant='h2' sx={{ my: [2, 4] }}>
         About
       </Typography>
       <Typography sx={{ mb: [1, 2] }}>

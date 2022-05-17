@@ -1,11 +1,12 @@
 import Box, { BoxProps } from '@mui/material/Box';
 import Fade from '@mui/material/Fade';
 import Typography, { TypographyProps } from '@mui/material/Typography';
+import React from 'react';
 
 const AnimatedTitleFade: React.FC<{
   children: string;
   BoxProps?: BoxProps;
-  TypographyProps?: TypographyProps;
+  TypographyProps?: TypographyProps<any>;
 }> = ({ children, BoxProps = {}, TypographyProps = {} }) => {
   return (
     <Box {...BoxProps}>
