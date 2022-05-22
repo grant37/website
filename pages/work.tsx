@@ -31,7 +31,7 @@ export default function Work({
       </Typography>
       <List>
         {myGithubRepos.map((repo) => (
-          <a href={repo.htmlUrl}>
+          <a href={repo.htmlUrl} key={repo.htmlUrl}>
             <ListItem button>
               <ListItemAvatar>
                 <Avatar>{repo.fork ? <ForkLeftIcon /> : <BuildIcon />}</Avatar>
