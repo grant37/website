@@ -9,6 +9,7 @@ import {
 } from 'react';
 import useDetectTheme from '../hooks/useDetectTheme';
 import { dark, light } from '../theme';
+import Head from 'next/head';
 
 export type ThemeSetting = {
   isDark: boolean;
@@ -37,9 +38,15 @@ const ThemeSettingsProvider: React.FC<{ children: React.ReactNode }> = ({
     useMemo(() => [themeSettings, setThemeSettings], [themeSettings]);
 
   const currentTheme = themeSettings.isDark ? dark : light;
+  const faviconPath = isBrowserInDarkMode
+    ? 'images/favicon_dark.png'
+    : 'images/favicon.png';
 
   return (
     <ThemeProvider theme={currentTheme}>
+      <Head>
+        <link rel='icon' type='image/png' href={faviconPath} />
+      </Head>
       <ThemeSettingContext.Provider value={contextValue}>
         {children}
       </ThemeSettingContext.Provider>
