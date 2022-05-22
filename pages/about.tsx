@@ -1,7 +1,6 @@
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import CardLinkGrid from '../components/CardLinkGrid';
-import HomeLink from '../components/HomeLink';
 import ContactLink from '../components/ContactLink';
 import WorkLink from '../components/WorkLink';
 import Head from 'next/head';
@@ -59,7 +58,6 @@ export default function About() {
       <CardLinkGrid BoxProps={{ my: [2, 4] }}>
         <WorkLink />
         <ContactLink />
-        <HomeLink />
       </CardLinkGrid>
     </>
   );

@@ -1,6 +1,5 @@
 import Typography from '@mui/material/Typography';
 import CardLinkGrid from '../components/CardLinkGrid';
-import HomeLink from '../components/HomeLink';
 import AboutLink from '../components/AboutLink';
 import WorkLink from '../components/WorkLink';
 import SocialLink from '../components/SocialLink';
@@ -30,7 +29,7 @@ export default function Connect() {
         <SocialLink
           title='Email me'
           bgcolor={(theme) => theme.palette.secondary.main}
-          href='mailto:gtsisson@gmail.com'
+          href='mailto:grant@sisson.dev'
           icon={<EmailIcon fontSize='large' />}
         />
         <SocialLink
@@ -45,7 +44,6 @@ export default function Connect() {
       <CardLinkGrid BoxProps={{ mt: [4, 8], mb: [2, 4] }}>
         <WorkLink />
         <AboutLink />
-        <HomeLink />
       </CardLinkGrid>
     </>
   );

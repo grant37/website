@@ -6,6 +6,7 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import React, { ReactEventHandler } from 'react';
 import AnimatedTitleGrow from './AnimatedTitleGrow';
+import Link from 'next/link';
 
 const Nav: React.FC<{
   pageTitle: string;
@@ -16,12 +17,17 @@ const Nav: React.FC<{
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position='static' color='default'>
         <Toolbar>
-          <AnimatedTitleGrow
-            BoxProps={{ flexGrow: 1 }}
-            TypographyProps={{ variant: 'h6', component: 'h1' }}
-          >
-            Grant Sisson
-          </AnimatedTitleGrow>
+          <Box sx={{ flexGrow: 1 }}>
+            <Link href='/'>
+              <a>
+                <AnimatedTitleGrow
+                  TypographyProps={{ variant: 'h6', component: 'h1' }}
+                >
+                  Grant Sisson
+                </AnimatedTitleGrow>
+              </a>
+            </Link>
+          </Box>
           {onToggleDarkMode && (
             <IconButton
               size='large'

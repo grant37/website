@@ -1,5 +1,4 @@
 import CardLinkGrid from '../components/CardLinkGrid';
-import HomeLink from '../components/HomeLink';
 import AboutLink from '../components/AboutLink';
 import ContactLink from '../components/ContactLink';
 import Typography from '@mui/material/Typography';
@@ -54,7 +53,6 @@ export default function Work({
       <CardLinkGrid BoxProps={{ my: [2, 4] }}>
         <ContactLink />
         <AboutLink />
-        <HomeLink />
       </CardLinkGrid>
     </>
   );
@@ -69,6 +67,6 @@ export async function getStaticProps() {
   });
   return {
     props: { pageTitle: 'Work', myGithubRepos },
-    revalidate: 60 * 24,
+    revalidate: 60 * 60,
   };
 }
